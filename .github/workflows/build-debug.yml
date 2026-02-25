@@ -5,6 +5,12 @@ on:
   push:
     branches:
       - main
+  workflow_dispatch:
+    inputs:
+      version_name:
+        description: 'Version name for the build'
+        required: false
+        default: 'manual-build'
 
 permissions:
   contents: read
@@ -24,8 +30,12 @@ jobs:
       - name: Get short Git hash
         id: version
         run: |
-          SHORT_GIT_SHA=$(git rev-parse --short HEAD)
-          echo "version_name=ci-${SHORT_GIT_SHA}" >> $GITHUB_OUTPUT
+          if [ "${{ github.event.inputs.version_name }}" != "" ]; then
+            echo "version_name=${{ github.event.inputs.version_name }}" >> $GITHUB_OUTPUT
+          else
+            SHORT_GIT_SHA=$(git rev-parse --short HEAD)
+            echo "version_name=ci-${SHORT_GIT_SHA}" >> $GITHUB_OUTPUT
+          fi
 
       - name: Build Android
         id: build
