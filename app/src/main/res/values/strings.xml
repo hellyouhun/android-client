@@ -112,4 +112,29 @@
     <string name="profiles_switch">切换</string>
     <string name="profiles_logout">退出登录</string>
     <string name="profiles_remove">删除</string>
+
+    <!-- More missing strings from Java code -->
+    <string name="profiles_dialog_remove_title">删除配置文件</string>
+    <string name="profiles_dialog_remove_message">确定要删除配置文件 "%1$s" 吗？</string>
+    <string name="profiles_success_added">配置文件 "%1$s" 添加成功</string>
+    <string name="profiles_error_already_exists">配置文件 "%1$s" 已存在</string>
+    <string name="profiles_success_switched">已切换到配置文件 "%1$s"</string>
+    <string name="profiles_dialog_add_title">添加配置文件</string>
+    <string name="profiles_dialog_add_message">输入新配置文件的名称</string>
+    <string name="profiles_dialog_add_hint">配置文件名称</string>
+    <string name="profiles_error_empty_name">配置文件名称不能为空</string>
+    <string name="profiles_dialog_switch_title">切换配置文件</string>
+    <string name="profiles_dialog_switch_message">确定要切换到配置文件 "%1$s" 吗？</string>
+    <string name="profiles_dialog_logout_title">退出登录</string>
+    <string name="profiles_dialog_logout_message">确定要退出配置文件 "%1$s" 吗？</string>
+    <string name="profiles_success_logged_out">已退出配置文件 "%1$s"</string>
+    <string name="profiles_error_cannot_remove_default">不能删除默认配置文件</string>
+    <string name="profiles_error_cannot_remove_active">不能删除当前活跃的配置文件</string>
+    <string name="profiles_success_removed">配置文件 "%1$s" 已删除</string>
+    <string name="change_server_error_invalid_server_url">服务器 URL 无效</string>
+    <string name="reconnectionNeededWarningMessage">需要重新连接才能应用更改</string>
+    <string name="advanced_force_relay_conn">强制中继连接</string>
+    <string name="advanced_force_relay_conn_desc">强制通过中继服务器连接</string>
+    <string name="device_code">设备代码：%1$s</string>
+    <string name="tv_menu_hint">请使用菜单按钮</string>
 </resources>
