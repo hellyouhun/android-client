@@ -97,4 +97,19 @@
     <string name="desc_logo">NetBird 标志</string>
     <string name="desc_exclamation_mark">感叹号</string>
     <string name="desc_peers_empty">空盒子</string>
+
+    <!-- Missing strings -->
+    <string name="dialog_always_on_desc">始终开启描述</string>
+    <string name="exclamation_mark">感叹号</string>
+    <string name="advanced_theme_title">主题</string>
+    <string name="advanced_theme_desc">选择应用主题</string>
+    <string name="advanced_theme_system">跟随系统</string>
+    <string name="advanced_theme_light">浅色</string>
+    <string name="advanced_theme_dark">深色</string>
+    <string name="profiles_add">添加配置文件</string>
+    <string name="change_server_setup_key_warning">设置密钥警告</string>
+    <string name="profiles_active">当前活跃</string>
+    <string name="profiles_switch">切换</string>
+    <string name="profiles_logout">退出登录</string>
+    <string name="profiles_remove">删除</string>
 </resources>
